@@ -14,7 +14,7 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Names.ly","url":"https://names.ly/","description":"Premium .ly domains for sale."}</script>
 <style>
 :root{--ol:#556B2F;--ol2:#6B8E23;--dk:#2F3B1A;--lt:#D4E38A;--bg:#fff;--fg:#1f2a12;--mu:#5f6b4d;--soft:#f3f6ea;--card:#fff;--ln:#dfe6cf;--hbg:rgba(255,255,255,.94);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#131809;--fg:#eef3df;--mu:#aab795;--soft:#1a2110;--card:#1d2512;--ln:#2e3a1d;--hbg:rgba(19,24,9,.94)}}
+:root{color-scheme:light}
 :root[data-theme="dark"]{--bg:#131809;--fg:#eef3df;--mu:#aab795;--soft:#1a2110;--card:#1d2512;--ln:#2e3a1d;--hbg:rgba(19,24,9,.94)}
 *{box-sizing:border-box;margin:0}
 html{scroll-behavior:smooth;scroll-padding-top:84px}
@@ -46,7 +46,7 @@ nav{display:flex;gap:26px;font-weight:700;color:var(--mu)}nav a:hover{color:var(
 .st{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:540px;margin:40px auto 0}
 .st div{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:18px;padding:14px}
 .st b{display:block;font:900 1.5rem Inter}.st span{font-size:.75rem;color:#e3ecc0;font-weight:700}
-section{padding:64px 0}.alt{background:var(--soft)}
+section{padding:64px 0}.alt{background:#fff;border-top:1px solid var(--ln)}
 .k{text-align:center;color:var(--ol2);font:900 .78rem Inter;letter-spacing:.12em;text-transform:uppercase;margin-bottom:6px}
 h2{text-align:center;font-size:clamp(1.7rem,4vw,2.4rem);font-weight:900;letter-spacing:-.02em;margin-bottom:12px}
 .sub{text-align:center;color:var(--mu);max-width:720px;margin:0 auto 32px}
@@ -66,14 +66,14 @@ h2{text-align:center;font-size:clamp(1.7rem,4vw,2.4rem);font-weight:900;letter-s
 .chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;scrollbar-width:none}.chips::-webkit-scrollbar{display:none}
 .chip{white-space:nowrap;border:1px solid var(--ln);background:var(--card);color:var(--fg);padding:9px 14px;border-radius:12px;font:800 .78rem inherit;cursor:pointer;transition:.2s}
 .chip:hover,.chip.on{background:var(--ol);border-color:var(--ol);color:#fff}
-.dc{position:relative;display:flex;flex-direction:column;min-height:250px;background:var(--card);border:1px solid var(--ln);border-radius:22px;overflow:hidden;transition:.28s}
-.dc:before{content:"";height:4px;background:linear-gradient(90deg,var(--dk),var(--ol2))}
-.dc:hover{transform:translateY(-6px);border-color:var(--ol2);box-shadow:0 22px 50px rgba(47,59,26,.15)}
+.dc{position:relative;display:flex;flex-direction:column;min-height:250px;background:var(--card);border:1px solid #ebefe0;border-radius:22px;overflow:hidden;transition:.28s}
+.dc:before{content:"";height:4px;background:linear-gradient(90deg,#e6eecb,#cddb9f)}
+.dc:hover{transform:translateY(-6px);border-color:#cfdca6;box-shadow:0 22px 50px rgba(0,0,0,.08)}
 .dc .t{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:22px 22px 0}
-.dc h3{font:900 clamp(1.5rem,2.4vw,2rem) Inter;letter-spacing:-.05em;direction:ltr}.dc h3 i{font-style:normal;color:var(--ol2)}
-.tag{background:var(--soft);border:1px solid var(--ln);color:var(--ol);font-size:.7rem;font-weight:800;padding:6px 11px;border-radius:99px;white-space:nowrap}
+.dc h3{font:900 clamp(1.5rem,2.4vw,2rem) Inter;letter-spacing:-.05em;direction:ltr}.dc h3 i{font-style:normal;color:#9db36a}
+.tag{background:#f8faf1;border:1px solid #e9eedb;color:#7d8d5a;font-size:.7rem;font-weight:800;padding:6px 11px;border-radius:99px;white-space:nowrap}
 .dc p{flex:1;padding:16px 22px;color:var(--mu);font-size:.9rem}
-.dc a{margin:0 16px 16px;text-align:center;background:var(--ol);color:#fff;border-radius:13px;padding:12px;font-weight:800;transition:.2s}.dc a:hover{background:var(--dk)}
+.dc a{margin:0 16px 16px;text-align:center;background:#eef3dc;color:var(--ol);border-radius:13px;padding:12px;font-weight:800;transition:.2s}.dc a:hover{background:var(--ol2);color:#fff}
 .dis{display:none}.none{text-align:center;color:var(--mu);margin-top:20px}
 .num{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:var(--soft);color:var(--ol);font-weight:900;margin-bottom:12px}
 .fam{text-align:center}.fam .box{border-top:4px solid var(--ol2)}
@@ -93,11 +93,29 @@ footer .l{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 24px;margi
 .soc svg{width:18px;height:18px;fill:currentColor}
 footer .soc a{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.18);color:#d9e4b8!important}
 footer .soc a:hover{background:var(--ol2);color:#fff!important}
+/* circular theme */
+.bt,.chip,.sb,.dc a,.lang,.lang button,#mb,input,select,#mp a{border-radius:999px}
+input,select{padding-inline:20px}#q{padding:0 24px}
+textarea{border-radius:28px;padding:14px 20px}
+.tb{border-radius:44px;padding:22px 26px}
+.box{border-radius:34px;padding:26px}
+.feat{border-radius:38px;padding:26px 24px}
+.dc{border-radius:42px}
+.dc .t{padding:28px 28px 0}.dc p{padding:16px 28px}
+.num{border-radius:50%;width:48px;height:48px}
+.ico{width:56px;height:56px;border-radius:50%;background:var(--soft);display:grid;place-items:center;font-size:1.6rem;margin-bottom:12px}
+.tc .ico,.fam .ico{width:72px;height:72px;margin-left:auto;margin-right:auto}
+.fam .box,.tc .box,.dc,.box .num{text-align:center}.dc .t{text-align:start}
+.st{max-width:440px;gap:14px}
+.st div{aspect-ratio:1;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:6px}
+.cbox{border-radius:56px}
+.hero{border-radius:0 0 50% 50%/0 0 46px 46px}
+.num{margin-left:auto;margin-right:auto}
 </style>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><linearGradient id="lgg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6B8E23"/><stop offset="1" stop-color="#3F5220"/></linearGradient></defs>
-<symbol id="lg" viewBox="0 0 200 200"><rect width="200" height="200" rx="46" fill="url(#lgg)"/><g fill="none" stroke="#fff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"><path d="M30 148V52L78 148V52"/><path d="M146 74C140 56 100 54 100 78C100 100 146 98 146 124C146 148 104 146 98 128"/></g><circle cx="168" cy="148" r="7" fill="#D4E38A"/></symbol></svg>
+<symbol id="lg" viewBox="0 0 200 200"><rect width="200" height="200" rx="100" fill="url(#lgg)"/><g fill="none" stroke="#fff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"><path d="M30 148V52L78 148V52"/><path d="M146 74C140 56 100 54 100 78C100 100 146 98 146 124C146 148 104 146 98 128"/></g><circle cx="168" cy="148" r="7" fill="#D4E38A"/></symbol></svg>
 
 <header><div class="wrap"><div class="hd">
 <a href="#top" class="logo"><svg><use href="#lg"/></svg><span>Names<b>.ly</b></span></a>
