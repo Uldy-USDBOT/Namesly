@@ -1,4 +1,11 @@
 {
-  "domains": [],
+  "domains": [
+    {
+      "name": "Major",
+      "cat": "business",
+      "ar": "علامة تجارية قوية لشركة رائدة، منصة استشارات وأعمال، أو مشروع كبير يطمح للريادة",
+      "en": "A strong brand for a leading company, a business and consulting platform, or a major venture aiming for leadership"
+    }
+  ],
   "categories": {}
 }
